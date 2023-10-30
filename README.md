@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+# Outil de calcul de l'empreinte écologique pour l'Asynconf 2023
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ma contribution au tournoi organisé à l'asynconf 2023 qui consistait à réaliser un outil de calcul de l'empreinte écologique pour Green Bank
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clonez ce repo
+2. Exécutez `npm install` pour installer les dépendances.
+3. Exécutez `npm run dev` pour lancer l'application en mode développement
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   Vite
+-   React
+-   TypeScript
 
-- Configure the top-level `parserOptions` property like this:
+## Contributeur
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+-   AmaruZ
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Liens utiles
+
+-   [Lien vers le tournoi](https://asynconf.fr/#tournament)
+-   [Enoncé du tournoi](https://asynconf.fr/docs/sujet_tournoi.pdf)
