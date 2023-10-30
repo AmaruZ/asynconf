@@ -14,11 +14,11 @@ export const fuelTypes = [
 ]
 
 export const mileageOptions = [
-    { min: 5, max: 10, score: 9 },
-    { min: 10, max: 15, score: 7 },
-    { min: 15, max: 20, score: 5 },
-    { min: 20, max: 25, score: 3 },
-    { min: 25, max: 30, score: 1 },
+    { min: 5000, max: 10000, score: 9 },
+    { min: 10000, max: 15000, score: 7 },
+    { min: 15000, max: 20000, score: 5 },
+    { min: 20000, max: 25000, score: 3 },
+    { min: 25000, max: 30000, score: 1 },
 ]
 
 export const yearOptions = [

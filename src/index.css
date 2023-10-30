@@ -9,7 +9,7 @@
     display: flex;
     gap: 20px;
 }
-.green {
+.text-green {
     color: #7aa55a;
 }
 .title {
@@ -55,6 +55,7 @@
 .form__button {
     width: 50%;
     height: 40px;
+    margin-top: 10px;
     background-color: #080d34;
     color: white;
     font-family: 'Ubuntu';
@@ -72,7 +73,8 @@
 }
 
 .rate-displayer__text--big {
-    font-size: 1.5em;
+    font-size: 1.6em;
+    font-weight: 500;
     color: #369ad4;
 }
 

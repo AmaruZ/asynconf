@@ -24,14 +24,14 @@ const FormEcoCalc = ({
     const handleClick = (e: React.FormEvent<HTMLButtonElement>) => {
         e.preventDefault()
         setRate(
-            calculateRate(
-                Math.round(
+            parseFloat(
+                calculateRate(
                     vehiculeScore +
                         fuelScore +
                         calculateScore(mileageValue, mileageOptions) +
-                        calculateScore(yearValue, yearOptions)
-                ),
-                passengerRate
+                        calculateScore(yearValue, yearOptions),
+                    passengerRate
+                ).toFixed(2)
             )
         )
     }
@@ -55,7 +55,7 @@ const FormEcoCalc = ({
                 options={mileageOptions}
                 setValue={setMileageValue}
                 value={mileageValue}
-                step={1}
+                step={100}
             />
             <CategoryInput
                 label={'Année de fabrication 📅'}
