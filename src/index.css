@@ -5,16 +5,21 @@
     font-size: 1.2em;
     color: #080d34;
 }
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
 .green {
     color: #7aa55a;
 }
 .title {
-    text-wrap: pretty;
+    text-align: center;
+    text-wrap: balance;
 }
 .form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex: 1;
     gap: 10px;
 }
 
@@ -58,4 +63,21 @@
     cursor: pointer;
     border-radius: 5px;
     align-self: center;
+}
+
+.rate-displayer {
+    flex: 1;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.rate-displayer__text--big {
+    font-size: 1.5em;
+    color: #369ad4;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
 }

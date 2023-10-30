@@ -2,12 +2,13 @@ const calculateScore = (
     value: number,
     options: { min: number; max: number; score: number }[]
 ) => {
+    let result = 0
     for (const range of options) {
-        if (value >= range.min && value < range.max) {
-            return range.score
+        if (value >= range.min && value <= range.max) {
+            result = range.score
         }
     }
-    return 0
+    return result
 }
 
 export default calculateScore
