@@ -1,31 +1,46 @@
 export const vehiculeTypes = [
-    { type: 'Citadine', rate: 8 },
-    { type: 'Cabriolet', rate: 6 },
-    { type: 'Berline', rate: 6.5 },
-    { type: 'SUV / 4x4', rate: 4 },
+    { type: 'Citadine', score: 8 },
+    { type: 'Cabriolet', score: 6 },
+    { type: 'Berline', score: 6.5 },
+    { type: 'SUV / 4x4', score: 4 },
 ]
 
 export const fuelTypes = [
-    { type: 'Essence', rate: 5 },
-    { type: 'Electrique', rate: 9 },
-    { type: 'Gaz', rate: 6 },
-    { type: 'Diesel', rate: 4 },
-    { type: 'Hybride', rate: 7 },
+    { type: 'Essence', score: 5 },
+    { type: 'Electrique', score: 9 },
+    { type: 'Gaz', score: 6 },
+    { type: 'Diesel', score: 4 },
+    { type: 'Hybride', score: 7 },
 ]
 
 export const mileageOptions = [
-    { min: 5, max: 10, rate: 9 },
-    { min: 10, max: 15, rate: 7 },
-    { min: 15, max: 20, rate: 5 },
-    { min: 20, max: 25, rate: 3 },
-    { min: 25, max: 30, rate: 1 },
+    { min: 5, max: 10, score: 9 },
+    { min: 10, max: 15, score: 7 },
+    { min: 15, max: 20, score: 5 },
+    { min: 20, max: 25, score: 3 },
+    { min: 25, max: 30, score: 1 },
 ]
 
 export const yearOptions = [
-    { min: 1960, max: 1970, rate: 1 },
-    { min: 1970, max: 1980, rate: 2 },
-    { min: 1980, max: 1990, rate: 3 },
-    { min: 1990, max: 2000, rate: 4 },
-    { min: 2000, max: 2010, rate: 5 },
-    { min: 2010, max: new Date().getFullYear(), rate: 7 },
+    { min: 1960, max: 1970, score: 1 },
+    { min: 1970, max: 1980, score: 2 },
+    { min: 1980, max: 1990, score: 3 },
+    { min: 1990, max: 2000, score: 4 },
+    { min: 2000, max: 2010, score: 5 },
+    { min: 2010, max: new Date().getFullYear(), score: 7 },
+]
+
+export const passengerOptions = [
+    { number: 1, rate: 0.11 },
+    { number: 2, rate: -0.17 },
+    { number: 3, rate: -0.29 },
+    { number: 4, rate: -0.53 },
+]
+
+export const rates = [
+    { scoreMin: 0, scoreMax: 10, rate: 3 },
+    { scoreMin: 11, scoreMax: 15, rate: 2.74 },
+    { scoreMin: 16, scoreMax: 25, rate: 2.52 },
+    { scoreMin: 26, scoreMax: 33, rate: 2.1 },
+    { scoreMin: 34, scoreMax: 40, rate: 1.85 },
 ]

@@ -1,9 +1,16 @@
 import { useState } from 'react'
 
+type Option = {
+    type?: string
+    rate?: number
+    number?: number
+    score?: number
+}
+
 type Props = {
     label: string
     name: string
-    options: { type: string; rate: number }[]
+    options: Option[]
     setValue: (value: number) => void
 }
 
@@ -16,16 +23,19 @@ const CategorySelector = ({ label, name, options, setValue }: Props) => {
         setValue(selectedValue)
     }
     return (
-        <div>
-            <label htmlFor={name}>{label}</label>
+        <div className="form__input-container">
+            <label className="form__label" htmlFor={name}>
+                {label}
+            </label>
             <select
                 id={name}
                 value={selectedOption}
                 onChange={handleSelectChange}
+                className="form__select"
             >
                 {options.map((option, index) => (
-                    <option key={index} value={option.rate}>
-                        {option.type}
+                    <option key={index} value={option.score || option.rate}>
+                        {option.type || option.number}
                     </option>
                 ))}
             </select>
